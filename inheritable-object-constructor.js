@@ -7,7 +7,7 @@
  * The 'prototype' object defines properties and methods inherited by all instances of the object
  * -> to be used in priority for performance reasons (declaration of those properties / methods will only run once for all objects)
  * The constructor is where instanced properties and methods are set upon creation of objects (with the 'new' operator)
- * -> meaning that modifications of those will only affect that particular instance of the object
+ * -> meaning that modifications of those properties / methods will only affect that particular instance of the object
  * Private variables encapsulation can be achieved in the object's constructor
  */
 
