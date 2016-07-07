@@ -22,7 +22,7 @@ Singleton(); // prints 'Singleton executed' only once
 
 // --- Case 'this' ---
 // Note: setting 'this' as _singletonInstance will store many times same instance of same object (Droste effect style)
-//       -> if you just need a globally accessible object refer to https://github.com/decksterr/javascript-patterns/blob/master/avoid-globals.js
+//       -> if you just need a globally accessible object refer to /avoid-globals.js
 //       -> use the 'new' keyword upon declaration if using 'this'
 var a = new Singleton(),
     b = new Singleton();
