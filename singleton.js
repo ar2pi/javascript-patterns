@@ -5,7 +5,7 @@
 var Singleton = function() {
     if(Singleton.prototype._singletonInstance) {
         return Singleton.prototype._singletonInstance;
-    }
+    }// test
     Singleton.prototype._singletonInstance = true; // or 'this', see below
     
     // do whatever
