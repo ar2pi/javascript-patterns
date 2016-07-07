@@ -1,4 +1,4 @@
-﻿/***
+/***
  * An inheritable object constructor pattern, to be used when setting objects that need:
  * - common properties and / or methods (prototype)
  * - set(able) custom properties (constructor)
