@@ -1,4 +1,4 @@
-/*** 
+/*
  * A singleton pattern is typically used to instanciate a given object only once
  * and eventually avoid setting global variables as checkers for that instanciation
  */
