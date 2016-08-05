@@ -1,4 +1,4 @@
-/***
+/*
  * A self-clearing interval to avoid infinite repetition
  */
 var count = 0,
