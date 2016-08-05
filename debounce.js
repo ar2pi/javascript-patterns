@@ -14,7 +14,7 @@ function debounce(func, wait, immediate) {
             timeout = null; 
         }, wait || 100); 
     };
-};
+}
 
 // Example of use:
 jQuery(document).ready(function() {
