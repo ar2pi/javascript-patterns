@@ -25,3 +25,5 @@ jQuery(document).ready(function() {
         }, 250, true);
     );
 });
+
+// NB: credits to John Hann http://unscriptable.com/2009/03/20/debouncing-javascript-methods/
