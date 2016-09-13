@@ -22,7 +22,7 @@ jQuery(document).ready(function() {
             console.log('debounced');
             console.log(e); // will print the corresponding jQuery object
             // some heavy work
-        }, 250, true);
+        }, 250, true)
     );
 });
 
