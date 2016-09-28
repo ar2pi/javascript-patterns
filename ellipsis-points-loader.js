@@ -4,11 +4,11 @@
  *  var Loader = new PointsLoader(jQuery(target), 200)
  *  Loader.stopLoader();
  */
- var PointsLoader = function(e, speed) {
+var PointsLoader = function(e, speed) {
     var n = 1,
-        interval = setInterval(function(){
+        interval = setInterval(function() {
             var points = '';
-            for(var i=0; i < n; i++) {
+            for (var i = 0; i < n; i++) {
                 points += '.';
             }
             e.text(points);

@@ -2,20 +2,20 @@
  * Throttle function, in order to run a callback only once every x amount of time
  * 'immediate' can be set to return function as soon as it's been called rather than at the end of timer
  */
-function throttle (callback, limit) {
+function throttle(callback, limit) {
     var wait = false;
-    return function () {
+    return function() {
         if (!wait) {
             callback.call();
             wait = true;
-            setTimeout(function () {
+            setTimeout(function() {
                 wait = false;
-	    }, limit || 100);
-  	}
+            }, limit || 100);
+        }
     };
 }
 
-function callback ()  { 
+function callback() {
     console.log('throttled');
     // stuff to be throttled
 }

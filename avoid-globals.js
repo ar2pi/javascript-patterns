@@ -2,7 +2,7 @@
  * Easely avoid setting multiple global variables by storing them in one single custom namespace function returning all that is needed
  */
 var myNameSpace = function() {
-    // custom variables environment 
+    // custom variables environment
     var current = null,
         foo = 'bar';
     function init() {
@@ -25,7 +25,7 @@ myNameSpace.set(); // invokes the change() method
 /*
  * An encapsulated self-executing function, when you need things to be tidy (but don't actually need to see what's underneath)
  */
-(function(){ // wrap the function in between parenthesis to keep it from being globally exposed
+(function() { // wrap the function in between parenthesis to keep it from being globally exposed
     var ba = 'ba';
     console.log('Independance is key');
 })(); // the last () is for self-execution

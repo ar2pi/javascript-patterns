@@ -3,7 +3,7 @@
  * - common properties and / or methods (prototype)
  * - set(able) custom properties (constructor)
  * - basically same features as in other class oriented languages
- * 
+ *
  * The 'prototype' object defines properties and methods inherited by all instances of the object
  * -> to be used in priority for performance reasons (declaration of those properties / methods will only run once for all objects)
  * The constructor is where instanced properties and methods are set upon creation of objects (with the 'new' operator)

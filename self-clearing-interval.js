@@ -4,8 +4,8 @@
 var count = 0,
     limit = 6,
     time = 600000, // in milliseconds
-    myInterval = setInterval(function () {
+    myInterval = setInterval(function() {
         count++;
-	// do whatever
-        if(count === limit) clearInterval(myInterval);
+        // do whatever
+        if (count === limit) clearInterval(myInterval);
     }, time);

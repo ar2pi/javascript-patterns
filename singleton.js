@@ -3,13 +3,13 @@
  * and eventually avoid setting global variables as checkers for that instanciation
  */
 var Singleton = function() {
-    if(Singleton.prototype._singletonInstance) {
+    if (Singleton.prototype._singletonInstance) {
         return Singleton.prototype._singletonInstance;
     }
     Singleton.prototype._singletonInstance = true; // or 'this', see below
-    
+
     // do whatever
-    
+
     console.log('Singleton executed');
 };
 
