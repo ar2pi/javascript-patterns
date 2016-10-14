@@ -42,13 +42,13 @@ console.log(ba); // throws an undefined exception
 /*
  * An encapsulated object, that may be called anytime needed
  */
-(function (public) {
+(function(public) {
 
     // private variables
     var foo = {"bar": "baz"};
 
     // public method that initiates private methods callbacks
-    public.someFunction = function (param) {
+    public.someFunction = function(param) {
         privateFunction(param, foo);
     };
 
