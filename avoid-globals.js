@@ -42,20 +42,20 @@ console.log(ba); // throws an undefined exception
 /*
  * An encapsulated object, that may be called anytime needed
  */
-(function(public) {
-	
-    // private variables
-	var foo = {"bar":"baz"};
-    
-    // public method that initiates private methods callbacks
-	public.someFunction = function(param) {		
-		privateFunction(param, foo);				
-	};
+(function (public) {
 
-	function privateFunction(param, foo) {
+    // private variables
+    var foo = {"bar": "baz"};
+
+    // public method that initiates private methods callbacks
+    public.someFunction = function (param) {
+        privateFunction(param, foo);
+    };
+
+    function privateFunction(param, foo) {
         console.log(param);
         console.log(foo.bar === 'baz');
-	}
+    }
 
 })(window.some_namespace = window.some_namespace || {});
 window.some_namespace.someFunction('here be your output:');
