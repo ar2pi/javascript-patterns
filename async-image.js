@@ -1,5 +1,4 @@
-﻿
-/*
+﻿/*
  * load image in browser cache
  */
 (new Image()).src = 'url/to/image.svg';
