@@ -1,2 +1,2 @@
 # Javascript patterns
-A collection of some simple javascript snippets
+Just a collection of some javascript snippets
