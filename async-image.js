@@ -21,3 +21,11 @@ jQuery.get(imgSrc)
     .done(function() {
         jQuery('.target').css('background-image', 'url(' + imgSrc + ')');
     });
+
+// ensure image exists and is loaded before setting new background
+jQuery(new Image())
+    .on('load', function() {
+        jQuery('#element').css('background-image', 'url(' + imgUrl + ')');
+        jQuery('#container').addClass('has-image');
+    })
+    .attr('src', imgUrl);
