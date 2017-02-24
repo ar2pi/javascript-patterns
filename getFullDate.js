@@ -8,7 +8,7 @@ function getFullDate(input) {
         var output,
             f = [], d = [], t = [],
             fs = input.match(/T| /), ds = input.match(/-|\//);
-        (fs !== null) ? f = input.split(fs[0]): f[0] = input;
+        (fs !== null) ? f = input.split(fs[0]) : f[0] = input;
         (ds !== null) ? d = f[0].split(ds[0]) : d = '';
         if (d.length) {
             output = new Date(d[0], parseInt(d[1]) - 1, d[2]);
