@@ -29,12 +29,12 @@
 
   myModule = function(arg) {
     this.stuff = 'instanciable object';
-    this.arg = arg || 'can has all the args u can give, but u no forget new eh :3';
+    this.arg = arg || 'stuff';
     this.kindof = 'awesome';
     return this;
   };
   myModule.prototype = {
-    constructor: myModule,
+    constructor: Module,
     is: function() {
       return this.kindof + ' ;)';
     }
@@ -44,8 +44,12 @@
     return this.kindof + ' ;)';
   };
 
+  // or
+
+  myModule = new Module(); // instanciated object
+
   function someHelper() {
-    return 'send in the cavalry!';
+    return 'kittens!';
   }
 
   // do more stuff, let teh crazyness flow through you
