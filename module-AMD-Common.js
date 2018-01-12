@@ -1,11 +1,11 @@
 !function(context, factory) {
   if (typeof module === 'object' && module.exports) {
     factory(exports, require('dep1'), require('dep2')); 
-	} else if (typeof define === 'function' && define.amd) {
-		define(['exports', 'dep1', 'dep2'], factory);
-	} else {
-		factory((context.myModule = {}), context.dep1, context.dep2);
-	}
+  } else if (typeof define === 'function' && define.amd) {
+    define(['exports', 'dep1', 'dep2'], factory);
+  } else {
+    factory((context.myModule = {}), context.dep1, context.dep2);
+  }
 }(this, function(myModule, dep1, dep2) {
   'use strict';
   
