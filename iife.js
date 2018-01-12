@@ -4,7 +4,7 @@
 })();
 // or
 !function(){
-    console.log('IIFE ftw');
+    console.log('IIFE 2 ftw');
 }();
 var iife = function(){
     console.log('expression is expected here, so wrapping in () is not required');
