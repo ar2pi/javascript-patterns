@@ -2,6 +2,10 @@
 (function(){
     console.log('IIFE ftw');
 })();
+// or
+!function(){
+    console.log('IIFE ftw');
+}();
 var iife = function(){
     console.log('expression is expected here, so wrapping in () is not required');
     return 1;
