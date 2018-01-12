@@ -68,7 +68,7 @@
     this.kindof = 'verbose';
     return this;
   }
-  myModule = new Module(); // instanciated object
+  myModule = new Module('noice'); // instanciated object
 
   function someHelper() {
     return 'kittens!';
