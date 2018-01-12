@@ -1,5 +1,6 @@
 /*
  * Create instances of several families of objects derived from the same building pattern
+ * for reference: https://addyosmani.com/resources/essentialjsdesignpatterns/book/#factorypatternjavascript
  */
 
 // A constructor for defining new cars
@@ -58,5 +59,3 @@ console.log(car instanceof Car);
 
 // Outputs: Car object of color "yellow", doors: 6 in a "brand new" state
 console.log(car);
-
-// NB: credits to Addy Osmani https://addyosmani.com/resources/essentialjsdesignpatterns/book/#factorypatternjavascript
