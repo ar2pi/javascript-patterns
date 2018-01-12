@@ -61,7 +61,13 @@
   };
 
   // or
-
+  
+  var Module = function(arg) {
+    this.stuff = 'scoped object constructor';
+    this.arg = arg || 'stuff';
+    this.kindof = 'verbose';
+    return this;
+  }
   myModule = new Module(); // instanciated object
 
   function someHelper() {
