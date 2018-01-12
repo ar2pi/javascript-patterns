@@ -34,7 +34,7 @@
     return this;
   };
   myModule.prototype = {
-    constructor: Module,
+    constructor: myModule,
     is: function() {
       return this.kindof + ' ;)';
     }
