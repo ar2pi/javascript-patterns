@@ -1,31 +1,53 @@
 /*
- * A singleton pattern is typically used to instanciate a given object only once
- * and eventually avoid setting global variables as checkers for that instanciation
+ * Make sure to execute a function only once
  */
 var Singleton = function() {
-    if (Singleton.prototype._singletonInstance) {
-        return Singleton.prototype._singletonInstance;
-    }
-    Singleton.prototype._singletonInstance = true; // or 'this', see below
+  if(Singleton.prototype._singletonInstance) {
+    return Singleton.prototype._singletonInstance;
+  }
+  Singleton.prototype._singletonInstance = true;
 
-    // do whatever
+  // do whatever
 
-    console.log('Singleton executed');
+  console.log('Singleton executed');
 };
 
-/* --- Case 'true' ---
- * Note: in case you dont actually need to set the object but rather run the code inside it only once:
- *      -> set 'true' as _singletonInstance
- *      -> the non-use of the 'new' keyword is because we are just accessing the function's prototype property
- */
 Singleton();
 Singleton(); // prints 'Singleton executed' only once
 
-/* --- Case 'this' ---
- * Note: setting 'this' as _singletonInstance will store many times same instance of same object (Droste effect style)
- *      -> if you just need a globally accessible object refer to /avoid-globals.js
- *      -> use the 'new' keyword upon declaration if using 'this'
+/*
+ * Make sure to instanciate an object only once
+ * for reference see: https://addyosmani.com/resources/essentialjsdesignpatterns/book/#singletonpatternjavascript
  */
-var a = new Singleton(),
-    b = new Singleton();
-console.log(a === b); // prints 'true'
+var TrueSingleton = !function() {
+
+  // Instance stores a reference to the Singleton
+  var instance;
+
+  function init() {
+
+    console.log('instanciated teh singleton');
+    // do stuff
+
+    return {
+      aProperty: 'some prop',
+      aMethod: function() {
+        console.log('yeee');
+      }
+    };
+
+  };
+
+  return {
+    getInstance: function() {
+      if (!instance) {
+        instance = init();
+      }
+      return instance;
+    }
+  };
+
+}();
+TrueSingleton.getInstance();
+TrueSingleton.getInstance(); // prints 'instanciated teh singleton' only once
+console.log(TrueSingleton.getInstance() === TrueSingleton.getInstance()); // prints true
